@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        div {
+            background-color: yellow;
+        }
+
+        /* Class Selector */
+        .red {
+            background-color: red;
+        }
+
+        /* ID Selector */
+        #blue {
+            background-color: blue;
+        }
+
+        /* Child Selector Must be a direct child of the parent element */
+        div>p {
+            background-color: green;
+            color: aqua;
+        }
+
+        /* Descendant Selector anywhere inside the div is a descendent of div */
+        div article {
+            background-color: pink;
+            color: rgba(255, 7, 7, 0.537);
+        }
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selector */
+        a:hover {
+            color: cyan;
+        }
+        a:visited{
+            color: violet;
+        }
+        a:active{
+            color: green;
+        }   
+        a:link{
+            color: blue;
+        }
+        p:first-child{      
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Hello
+    </div>
+    <div id="blue">
+        Hi
+    </div>
+    <div class="red">
+        I am a div element.
+    </div>
+    <div>
+        <p>Hi, I am first child of div.</p>
+        <p>Hi, I am second child of div.</p>
+    </div>
+    <a href="https://www.youtube.com" >Youtube</a>
+</body> 
+
+</html> 

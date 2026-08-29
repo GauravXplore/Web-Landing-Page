@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade Algorithm Overview</title>
+    <style>
+        /* The Specificity of this selector is 1. */
+        h1{
+            color:aqua;
+        }
+        /* The Specificity of this selector is 10+1 = 11. */
+        h1.yellow{
+            color: yellow ; 
+            /* !important overrides even inline CSS in Specificity 10,000 points Specificity score- Important Inline - 1000 points. */
+        }
+         /* The Specificity of this selector is 10. */
+        .cred{
+            color: #ff0000;
+        }
+         /* The Specificity of this selector is 10. */
+        .cpurple{
+            color: purple;
+        }
+        /* Inline style(1000)>Id selector(100)>Class, Attribute selector or pseudo-classes(10)>Element selector and pseudo elements(1)>Universal selector(0) */
+        /* Above is the specificity based comparision of selectors  */
+        /* Among same type of elements like class selectors the position matters the one placed later on is the one that gets into effect */
+         /* The Specificity of this selector is 10.*/
+        [data-x=a]{ 
+            background-color: red;
+            /* Example of attribute selector ^
+                                             |*/
+        /* Order in which CSS appears and where it comes from,whether it is a brower style, CSS from a browser extension, or your authored CSS. */
+        }
+        /* Specificity = 41. */
+        a.harryclass.rohan-class[href]:hover{
+            color:aqua;
+         /* a- 1, harryclass- 10, rohan-class-10, [href]-10, hover-10 */
+        }
+    </style>
+</head>
+<body>
+    <div>
+      <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>  
+    </div>
+    
+</body>
+</html>
