@@ -1,0 +1,1 @@
+alert("She's so kawaiii")
