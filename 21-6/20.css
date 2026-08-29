@@ -1,0 +1,14 @@
+div p:nth-child(1){
+    background-color:yellow;
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+}
+p{
+    background-color: blue;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration:line-through;
+    text-decoration-color: black;
+    text-align: center;
+}

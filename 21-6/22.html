@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 233px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: red;
+            color: white;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 233px; */
+            /* Viewport Width and height units */
+            width: 80vw;                   
+            height: 80vh;
+            margin: 23px auto;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a Box.
+    </div>
+    <div class="container">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nostrum omnis eveniet quos enim quibusdam inventore odit rem! A delectus cum cupiditate soluta.
+    </div>
+
+</body>
+
+</html>
