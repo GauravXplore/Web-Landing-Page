@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shadows and Outlines</title>
+    <style>
+    .box{
+        border: 2px solid black;
+        box-shadow: 10px 10px 4px 5px red;
+        padding: 34px;
+        /* box-shadow: horizontal-offset vertical-offset blur spread color inset; format for writing box shadow CSS*/
+    }
+        .text-shadow{
+        text-shadow: 2px 2px 3px purple;
+        /* text-shadow: horizontal-offset vertical-offset blur color; format for writing text shadow CSS*/
+        }
+
+
+        /* Meaning of terms:
+        h-offset & v-offset: determines shadow's vertical and horizontal position
+        blur: makes the shadow blurrier
+        spread: Expands or shrinks shadow size
+        color(obvious)
+        inset: makes the shadow inner.; */
+       .outline{
+        outline: 2px dotted black;
+        border: 2px solid blue;
+        outline-offset: 10px;
+        /* outline: width style color; syntax for outline */
+        }
+       /* Border is inside outline is outside(they dont take up space, not part of box model)*/
+    
+
+    </style>
 </head>
 <body>
+    <div class="box">
+        Hi, I am a Box.
+    </div>
+    <p class="text-shadow">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vitae consequuntur illo ipsa. Ipsum quaerat corporis ad soluta. Totam molestias quia natus, perferendis similique fugiat mollitia iste ullam consequuntur quibusdam amet quos iure, dolor quas, repellendus culpa deleniti pariatur dignissimos perspiciatis soluta nobis exercitationem nisi?
+    </p>
+    <span class="outline">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, reprehenderit!
+    </span>
     
 </body>
 </html>
