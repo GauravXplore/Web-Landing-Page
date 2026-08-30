@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        .box{
+            border: 2px solid blue; 
+            display: inline-block;
+            /* Inline elements do not respect top padding margin or width. We use inline block instead of inline to prevent this issue.  */
+            padding: 45px;
+            width: 344px;
+            margin:34px;
+        }
+        .box1{
+            /* display: none; */ 
+            /* The above property removes the box with the content and space taken by it. */
+            /* visibility: hidden; */
+            /* Visibility hides the content but the space taken remains intact. */
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+   <div class="box box1">
+    I am a Box.
+   </div>
+   <div class="box">
+    Also a Nice Box.
+   </div>
+   <span>I am a good</span>
+   <span>boy</span>
+</body>
+</html>
