@@ -10,7 +10,7 @@
             padding: 0;
         }
     .box{
-        height: 133px;
+        height: 433px;
         width: 80vw;
         padding: 3px;
         margin: 3px;             
@@ -20,7 +20,14 @@
     .box1{
          background-color: aqua;
          position: absolute;
-         top: 0px;
+          top: 0px;
+         left: 7px; 
+         /* position: sticky; */
+         /* sticky makes the block a fixed element until the html border  reaches it */
+         /* height: 111px;
+         width: 100%;
+         margin: 0;
+         padding: 0; */
     }
     /* absolute makes the element get positioned with respect to its nearest positioned ancestor */
     .box2{
@@ -31,7 +38,12 @@
         }
     .box3{
          background-color: antiquewhite;
+         /* position: fixed;
+         height: 111px;
+         bottom: 0px;
+         left: 8vw;  */
     }
+    /* position- fixed is used when we want the content we wanna show to be available throughout the page */
     .box4{
          background-color: purple;
     }
@@ -40,7 +52,14 @@
         padding: 43px;
         margin: 34px;
         border: 2px solid purple;
+        /* position: fixed; */
+        /* transform: translate(0) ; */
+        filter: invert(0);
+        perspective: 0em;
+        /*Exceptions: transform, filter or perspective properties can also make an element appear as positioned */
     }
+    /* position of child boxes will be relative to html until the position of parent isn't defined */
+    /* the box having higher z index value will be placed above the other */
     </style>
 </head>
 <body>

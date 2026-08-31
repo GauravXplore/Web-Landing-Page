@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(29, 28, 28);
+        }
+        .grandparent{
+            border: 30px solid white;
+            max-width: 28vw;
+            min-height: 1vw;
+            background-color: lightgray;
+            outline: 1px  solid black;
+            position: relative;
+            left:34vw;
+            top: 73px;
+        }
+        .parent{
+            border: 2px solid white;
+            border-radius: 10px;
+            max-width: 28vw;
+            background-color: white;
+            outline: 1px  solid whitesmoke;
+            position: relative;
+            z-index: 1;
+            box-shadow: 1px 1px 10px;
+            height: 560px;
+            /* left:37vw;
+            top:100px; */
+
+        }
+        .box1{
+         color: grey;
+         box-sizing: border-box;
+         border: 1px solid lightgray;
+         width: 55px;
+         display: inline-block;
+         margin:10px;
+         padding: 5px;
+         border-radius: 30px;
+         box-shadow: 1px 1px 1px ;
+         
+         }
+         .box2{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 1px solid lightgray;
+            color:gray;
+            padding: 5px;
+            box-shadow: 1px 1px 1px;
+            margin: 8px;
+            border-radius: 30px;
+         }
+         .box4{
+            color:gray;
+            margin: 3px;
+            line-height:1.5;
+            margin: 11px;
+            
+            
+         }
+         .box{
+            background-color: white;
+            border-radius: 10px
+         }
+         .box3{
+            
+            font-size: 30px;
+            margin: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 540;
+         }
+        div img{
+            margin:6px;
+            width: 27vw;
+            background-color: white;
+            border-radius: 10px;
+        }
+        .box5{
+            border: 2px solid lightblue;
+            box-sizing: border-box;
+            border-radius: 20px;
+            text-align: center;
+            background-color: lightblue;
+            color: blue;
+            position: relative;
+            left: 120px;
+            padding:10px;
+            width: 12vw;
+         }
+        
+
+    </style>
+</head>
+<body>
+    <div class="grandparent">
+
+        <div class="parent">
+            
+            <img src="img1.png" alt="image">
+            <div class="box box1">
+                Nature
+            </div>
+            <div class="box box2">
+                Lake
+            </div>
+            <div class="box box3">
+                Lago di Braies
+            </div>
+            <div class="box box4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, fuga in accusamus, tempora nostrum cum rerum odit unde sapiente itaque neque saepe voluptate molestias nam eos aut inventore, facere labore distinctio vero vitae necessitatibus dolores. In distinctio perspiciatis culpa iusto sapiente quas, animi sit ea sunt eius vero impedit placeat.
+            </div>
+                <div class="box box5">
+
+                Read More
+            
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
