@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        img{
+            float: right;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(3){
+            background-color: orange;
+            clear: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="image.png" alt="Image" width="230px">
+        <div class="card">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit illum voluptatibus modi repudiandae facere rem sequi doloribus consequatur exercitationem? Voluptate eveniet tempora ut odit repellendus qui aspernatur beatae nihil vero. Nisi saepe placeat eaque!
+            </p>
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rerum rem et veniam repellendus dolorum, reprehenderit ex, alias eum soluta nihil esse aliquam architecto impedit deleniti consectetur necessitatibus, voluptates ipsam nulla. Nesciunt, minus soluta consectetur ipsum beatae asperiores iste architecto reiciendis vitae.</div>
+        <div class="card">Card 3</div>
+    </div>
+    
+</body>
+</html>
