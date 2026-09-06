@@ -1,11 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercise5</title>
+    <style>
+        body{
+            position:absolute;
+            top: 0;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: blanchedalmond;
+            position: sticky;
+            height: 50px;
+            width: 99vw;
+            top:0;
+
+        }
+
+        nav span {
+            padding: 28px;
+            position: relative;
+            left: 29vw;
+            top: 13px;
+            font-size: 20px;
+        }
+        .boxes{
+            min-height: 500px;
+            background-color: honeydew;
+            margin: 20px;
+        }
+        .box{
+           border: 1px solid blueviolet;
+           margin: 6vw;
+           padding: 20px;
+           height: 500px;
+           width: 500px;
+           display: inline-block;
+        }
+        .box1{
+            background-color: rgb(162, 232, 255);
+        }
+        .box2{
+            background-color: gainsboro;
+        }
+        .box3{
+            text-align: center;
+            border:2px solid blueviolet;
+            border-radius: 40px;
+            margin: 70px;
+            min-height: 100px;
+            width:75vw;
+            position:relative;
+            left:7vw;
+            font-size: 50px;
+        }
+        .box3 p{
+            padding: 50px;
+        }
+        .circle{
+            position: fixed;
+            bottom: 20px;
+            right: 25px;
+            border:1px solid black;
+            height:75px;
+            width:75px;
+            border-radius: 100px;
+            background-color: burlywood;
+        }
+        footer{
+            border: 2px solid gray;
+            text-align: center;
+            background-color:gainsboro;
+            height: 50px;
+        }
+        footer p{
+            position: relative;
+            top: 20px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div>
+        <nav>
+            <span>Home</span>
+            <span>About</span>
+            <span>Contact Us</span>
+            <span>Services</span>
+        </nav>
+        <div>
+            <main>
+                <div class="boxes">
+
+                    <div class="box box1">
+                        <p>
+                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit dolorem ea a repellat
+                            accusantium provident. Quidem aspernatur deleniti, aut ullam delectus amet doloribus nulla
+                            perferendis at! Molestias sint distinctio nesciunt similique obcaecati veniam deserunt deleniti
+                            adipisci sunt nihil natus est numquam corrupti corporis, voluptas praesentium?
+                        </p>
+                    </div>
+                    <div class="box box2">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat aspernatur
+                            cupiditate alias vero repellendus ipsam quis excepturi ratione quaerat deserunt voluptatem, ea
+                            aliquid esse veritatis officia, illum nemo unde corrupti ad numquam soluta! Ipsum optio nemo
+                            excepturi velit suscipit sunt eveniet aut ipsam, culpa magni?
+                        </p>
+                        </div>
+                </div>
+                <div class="box3">
+                    <p>
+                        Hi I am a box with Border radius and I'm in the middle hehe.
+                    </p>
+                </div>
+                <div class="circle">
+
+                </div>
+            </main>
+        </div>
+        <div>
+            <footer>
+                <p>&copy; 2026 My Website. All rights reserved.</p>
+            </footer>
+        </div>
+
+    </div>
+
+
+
 </body>
+
 </html>
