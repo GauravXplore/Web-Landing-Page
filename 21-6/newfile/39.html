@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+     .container{
+        width:80vw;
+        height:100vh;
+        border: 2px solid yellow;
+        display: grid;
+        grid-template-columns: repeat(4,80px);
+
+        /* grid-template-columns: repeat(4,minmax(100px,1fr));  Min max syntax with repeat*/
+
+
+        /* grid-template-columns: [col1] 120px [col2] 100px [t]; */
+
+
+        /* grid-template-columns: 1fr 1fr 1fr; */
+
+
+        /* grid-template-columns: repeat(4,1fr); */
+
+
+        /*fr is a fraction of the available space. 1fr means 1 fraction of the available space. 2fr means 2 fractions of the available space. 3fr means 3 fractions of the available space. */
+
+
+        /* grid-template-rows: 100px 100px 100px; */
+
+
+        /* grid track is the space between the columns and rows. grid area is the space that the item occupies. grid line is the line that separates the columns and rows. */
+
+
+        /* gap: 10px; */
+        row-gap: 20px;
+        column-gap:30px;
+        /* recommendation: use gap instead of padding and margin in flexbox and grid */
+        justify-items: center;
+        align-items: center; 
+        /*properties same as flexbox. justify-items is the same as justify-content in flexbox. align-items is the same as align-content in flexbox. It is used for cells onlyy */
+  
+        /* justify-content: center;
+        align-content: center; */
+
+
+        /* it is used when we want the items to get justified inside the container. Container bada grid choti */
+        place-content: center;
+        /* replacement for both justify and align content center */
+     }
+     .items{
+        border: 2px solid red;
+        height: 52px;
+        width: 52px; 
+
+     }
+     .item4{
+        grid-column: col2/t;
+        grid-row: 1/2;
+        /* grid-column:<start line>/<end line>; */
+        /* grid-row: <start line>/<end line>; */
+        /* grid-column-start: <start line>; */
+        /* grid-column-end: <end line>; */
+        /* grid-row-start: <start line>; */
+        /* grid-row-end: <end line>; */
+     }
+     .item1{
+        /* grid-column: 1/2; */
+        /* grid-row: 1/2; */
+        /* OR */
+        /* grid-row-start: 1;
+        grid-row-end: 2; */
+        /* same thing */
+        align-self: start;
+        justify-self: end;
+        /* these properties are for individual items */
+     }
+     /* overlapping example */
+
+    </style>
+</head>
+<body> 
+    <div class="container">
+        <div class="items item1">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items item4">4</div>
+        <div class="items">5</div>
+    </div>
+    
+</body>
+</html>

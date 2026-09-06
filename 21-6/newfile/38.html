@@ -9,35 +9,74 @@
             border: 2px solid red;
             display: flex;
             height: 50vh;
+            /* justify-content: flex-end; */
             justify-content: center;
+            /* justify content is used to position the items in the main axis which is x-axis by default. */
+            /* justify-content: space-between; */
+            /* space around and space between are the same but space around has equal space on the left and right of the items. */
             align-items: center; 
+            /* same properties as justify-content but it is for the cross axis. */
+            /* we apply all the [flexbox properties] on the container not the items. */
             /* We apply display = flex on the container not the items this makes the container a flexbox and we can apply flexbox properties on the items inside the container. */ 
+            /* flex-direction: column-reverse; */
+            /* the elements in a flex display are arranged in flex direction which is left to right by default but we can change it to column or row-reverse or column-reverse. */
+            /*when flex direction is changed the axes also change accordingly. By default the main axis is x-axis and the cross axis is y-axis but when we change the flex direction to column the main axis becomes y-axis and the cross axis becomes x-axis. */
+            flex-wrap: wrap;
+            /* align-content: flex-start; */
+            /* align content is used to position the items in the cross axis when there are multiple lines of items. It is similar to align-items but it is used when there are multiple lines of items. */
+            /* there is no justify items in flexbox */
+            flex-flow: row wrap;
+            /* flex-flow: <flex-direction> <flex-wrap>; */
+                gap:10px 30px;
+                /* defines gap between items. */
+                /* row-gap: 20px;
+                column-gap: 20px; */
+
            }
            .item{
+            /* flex-grow: 1; */
+            /* flex grow is zero by default it defines the amount of space one item will take. */
             height: 52px;
             width: 52px;
             border: 2px solid black;
             background-color: blueviolet;
-            margin: 4px;
+            /* margin: 4px; */
            }
+         .order-1{
+            order:1;
+         }  
+         .order-2{
+            order:2;
+         }  
+         .order-3{
+            order:3;
+         }  
+         /* order property changes the order of the items in the flexbox. The higher the order value the later the item will be displayed. Default order = 0 */
+         .item1{
+            /* flex-grow: 2; */
+            flex-shrink: 2;
+            /*flex shrink is 1 by default it defines the amount of space one item will take when the container is shrunk in responsive design. Remove wrap to see the effect. */
+            align-self: flex-end;
+            /* align-self is used to position the item in the cross axis. It overrides the align-items property of the container. */
+         }
+         .item2{
+            align-self: flex-start;
+         }
     </style>
 </head>
 <body>
 
     <main>
         <div class="container">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item">3</div>
+            <div class="item order-1">4</div>
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
+            
+            
         </div>
     </main>
     
