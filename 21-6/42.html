@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+          .box{
+            height: 40px;
+            width: 40px;
+            background-color: beige;
+            border: 2px solid black;
+            /* transform: rotate(45deg); */
+            transform: rotate(0.25turn);
+            /* transform: scale(1.5); */
+            transform: scaleX(1.2); 
+            /* multiplies only the x-axis */
+            /* transform: rotateX(); */
+             /* rotates along x-axis */
+            /* 1turn = 360 degrees */
+            transform: skewY(22.5deg);
+            /* 2 corners se pakad kr khichh diya not applicable for z axis */
+
+            transform: translateZ(34%);
+            /* 34 percent of width of box */
+
+            /* we can use many transform properties simultaneously by adding spaces between the properties. */
+            transform-origin: 0% 0%;
+            /* transform origin changes the point of rotation of the object */
+            transform: matrix(45deg);
+            
+            display:flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .container{
+            height: 80vh;
+            width: 100vw;
+            border: 2px solid purple;
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+         Box
+        </div>
+    </div>
+    
+</body>
+</html>

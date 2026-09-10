@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise6</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container ul{
+            display:flex;
+            height: 9vh;
+            list-style:none;
+            gap: 20px;
+            align-items: center;
+
+        }
+        nav{
+            color: gray;
+            display: flex;
+            border: 2px solid whitesmoke;
+            justify-content: space-around;            align-content:center;
+        }
+        .logo img{
+            height: 6vh;
+            width: 4vw;
+            justify-self: center;
+            align-self: center;
+        }
+        .item1{
+            flex-grow: 1 ;
+            color:black;
+            font-size: 20px ;
+            font-weight: bold;
+        }
+        .item1::after{
+            content: "An Idera, Inc. Company";
+            font-weight: normal;
+            font-size: 10px;
+        }
+
+        
+        
+            
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="image.png" alt="UltraEdit">
+            </div>
+            <div class="container">
+                <ul>
+                    <li class="item1">UltraEdit</li>
+                    <li class="item2">Products</li>
+                    <li class="item3">Pricing</li>
+                    <li class="item4">Resources</li>
+                    <li class="item5">About Us</li>
+                    <div class="cs">
+                        <img src="download.png" alt="Customer service" height="25vh">
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>  
+</body>
+</html>
