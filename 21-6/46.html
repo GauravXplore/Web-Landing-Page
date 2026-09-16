@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .container{
+            background-color: rebeccapurple;
+            height: 45vh;
+            width: 25vw;
+
+        }
+         .box{
+           width: 34px;
+           height: 45px;
+           background-color: aqua;
+           /* animation-name: hehe;
+
+           animation-duration: 1s;
+
+           animation-iteration-count: infinite;
+           /* number of times the animation should execute */
+
+           /* animation-timing-function: cubic-bezier(0, 0, 0.01, 0.99);
+
+           animation-delay: 1s;
+
+           animation-direction: alternate-reverse;
+
+           animation-play-state: paused; */ 
+           /* stops the animation at the place even if it is in the middle of animation. */
+        
+        
+           /*shorthand notation for animation */
+
+           /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+           animation: hehe 3s ease-in-out 1s 1 backwards, 
+            haha 3s ease-in-out 1s 1;
+
+           /* In forward, the animation stops after the iteration and does not retain its original position.
+           In backwards,  the animation retains the original position AND it has executes the 'from' beforehand(like during animation-delay). */
+         }
+         @keyframes hehe{
+            from{
+             background-color: red;
+            }
+            to{
+                background-color: yellow;
+          transform: translateX(600px);
+            }
+         }
+         @keyframes haha{
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform:rotate(220deg);
+            }
+            80%{ 
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(310deg);
+            }
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+           Box 
+        </div>
+    </div>
+    
+</body>
+</html>

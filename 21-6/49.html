@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-fit and Object-cover</title>
+    <style>
+        .container{
+            height: 488px;
+            width: 466px;
+            border: 2px solid black;
+            /* background-color: azure; */
+            background-image: url(image.png);
+            /* we can import images in the background of our container by using the above style. */
+            
+            /* background-position: center center; */
+            /* same as object-position property */
+            
+             background-repeat: repeat-x;
+            /* if background is smaller than teh container the image by default repeats itself */
+             
+            /* background-clip: padding-box ;
+            Use MDN reference for viewing */
+
+        }
+        img{
+            width: 466px;
+            height: 488px;
+
+
+            /* object-fit: scale-down;
+            scales down the image to the bottom of the container. */
+
+
+            object-fit: contain;
+            object-position:10px 20px;
+            /* using object-position we can decide the position of image inside the container. percentage values can also be used. */
+
+
+            /* object-fit: fill; */
+            /* Used by default, it fills the whole container */
+
+            /* object-fit: cover;
+            object-position: top right; */
+            /* object position tells which part of the image must be kept in the covered container. */
+
+
+            /* object-fit: contain; makes the image such that it is of its original size but it leaves space inside the container if the container is not the same size as the image. */
+
+
+            /* object-fit: cover; covers the given height and width of the image inside img styles maintaining the aspect ratio.This cuts the original image  */
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+     <!-- <img src="image.png" alt=""> -->
+    </div>
+
+    
+</body>
+</html>

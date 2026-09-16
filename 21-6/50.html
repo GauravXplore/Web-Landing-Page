@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters</title>
+    <style>
+      img{
+        filter: blur(0px);
+        /* blurs the image according to the value */
+    }
+    .img1{
+        filter: brightness(100%) contrast(1.2);
+        /* change the value of contrast and brightness can be numeric or in percentage */
+    }
+    .img2{
+        filter: invert(1) ;
+        /* inverts the colors of image */
+        
+
+        filter: opacity(50);
+        /* changes the transparency of image 
+        used for overlapping in grid*/
+    }
+    .img3{
+        filter: grayscale(100%);
+        /* makes the image black and white */
+
+
+        /* filter: sepia(100%);
+        makes the image antique like */
+        
+        
+        
+        
+        /* refer to mdn references for more properties */
+
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/500px-Image_created_with_a_mobile_phone.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="">
+        <img src="https://img.magnific.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?semt=ais_hybrid&w=740&q=80" alt="" class="img2">
+        <img src="https://img.magnific.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?semt=ais_hybrid&w=740&q=80" alt="" class="img3">
+    </div>
+    
+</body>
+</html>

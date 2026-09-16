@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style> 
+      .container{
+        background-color: antiquewhite;
+        width: 36vw;
+        height: 25vh;
+      }
+      .box{
+        background-color: aquamarine;
+        height: 2.5vh;
+        width: 3.6vw;
+        /* for transition 4 properties are used: */
+        /* transition-property: transform; */
+        /* which property to add transition to */
+        /* transition-property: all; */
+        /* transition-property: background-color, transform;
+        transition-duration: 3s;
+        /* duration of transition */
+        /* transition-timing-function: ease-in ;
+
+        transition-delay: 1s;
+        after how much time (after the property is added or removed) must the transition take place. */ 
+         
+        /* short-hand notation */
+        transition: all 3s cubic-bezier(0.17, 0.61, 0, 0.96) 1s;
+      }
+      .translate{
+        transform: translateX(10vw) translateY(10vh) scale(2);
+        /* 10% of its height and width */
+        background-color: red;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate">
+             
+        </div>
+    </div>
+    
+</body>
+</html>

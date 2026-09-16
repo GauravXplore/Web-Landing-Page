@@ -4,7 +4,7 @@ class hawww{
         String name = "Columbina";
         String sentence="My name is Columbina Hyposelenia";
         System.out.println(sentence);
-        try (Scanner sc = new Scanner(System.in)) {
+        Scanner sc = new Scanner(System.in); {
 			System.out.println("Enter your name: ");
             name= sc.nextLine();
 		} 
