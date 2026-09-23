@@ -1,4 +1,4 @@
- let a = 5;               //when let is used here it becomes a global variable too
+let a = 5;               //when let is used here it becomes a global variable too
 var b = 6;
 var c = "Harry";
 // numbers, letters, underscores, dollar sign can be used to define a variable.
