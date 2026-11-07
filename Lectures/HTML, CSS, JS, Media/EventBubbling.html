@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        .child {
+            background-color: aliceblue;
+            border: 2px solid black;
+            padding: 14px;
+            margin: 14px;
+            cursor: pointer;
+        }
+
+        .childContainer {
+            background-color: rgb(181, 181, 119);
+            padding: 14px;
+            margin: 14px;
+        }
+
+        .container {
+            background-color: rgb(183, 128, 61);
+            padding: 14px;
+            margin: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="childContainer">
+            <div class="child">I am a child</div>
+        </section>
+    </div>
+    <script>
+        document.querySelector(".child").addEventListener("click", (e) => {
+            e.stopPropagation();
+            alert("Child was clicked")
+        })
+        document.querySelector(".childContainer").addEventListener("click", (e) => {
+            e.stopPropagation();
+            alert("childContainer was clicked")
+        })
+        document.querySelector(".container").addEventListener("click", (e) => {
+            e.alert("Container was clicked")
+        })
+        removeEventListener("click", (e) => {
+            e.alert("Container was clicked")
+            //removes the selected event from the handler.
+
+        })
+        function getRandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255);
+            let val2 = Math.ceil(0 + Math.random() * 255);
+            let val3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${val1}, ${val2}, ${val3})`
+
+        }
+
+
+        // let a = setInterval(() => {
+        //     document.querySelector(".childContainer").style.background = getRandomColor();
+        // }, 1000);   //we can see the content of function every 1 second.
+        //  console.log(a);
+
+
+
+        let a = setTimeout(() => {
+            document.querySelector(".childContainer").style.background = getRandomColor();
+        }, 1000);   //we can see the content of function after 1 second only one time.
+         console.log(a);
+
+         //clearTimeout(2) clears the timeout function
+
+         //clearInterval(2)  stops the color changing setInterval function
+
+    </script>
+    <!-- When we click on the child childContainer is also clicked along with the container. For example, if we live in UP we are directly Indians and by same logic we are Asians. 
+     
+    
+    
+    Event Bubbling - If we are listening any event on a element the listener activates for the element but for its parent as well. It can be stopped via stopPropagation-->
+</body>
+
+</html>

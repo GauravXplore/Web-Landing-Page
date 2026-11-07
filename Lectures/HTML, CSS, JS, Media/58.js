@@ -5,8 +5,8 @@ function nice(name) {
     console.log("Hey " + name + " you are nice!");
     console.log("Hey " + name + " you are good!");
     console.log("Hey " + name + " you are Hahu!");
-    
 }
+nice("Harry");
 //by using function we are packing a block of code in a particular parameter(here nice) which can be changed easily and can be reused as many times as necessary
 
 
